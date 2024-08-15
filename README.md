@@ -39,7 +39,7 @@ This package reads your JSDoc-annotated source code on [NextJS API route](https:
 yarn add next-swagger-doc
 ```
 
-## Usage #1: next-swagger-doc with Next.js 13
+## Usage #1: next-swagger-doc with Next.js 13 / Next.js 14
 
 To incorporate `next-swagger-doc` with your Next.js 13 project, follow these steps. This setup will generate Swagger documentation for your API based on your code and provide a built-in Swagger UI for viewing the documentation.
 
@@ -52,7 +52,7 @@ import { createSwaggerSpec } from "next-swagger-doc";
 
 export const getApiDocs = async () => {
   const spec = createSwaggerSpec({
-    apiFolder: "app/api", // define api folder under app folder
+    apiFolder: "src/app/api", // define api folder under app folder
     definition: {
       openapi: "3.0.0",
       info: {
